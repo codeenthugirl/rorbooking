@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  seat: MyString
+  fromdate: 2019-01-07
+  todate: 2019-01-07
+  user: one
+
+two:
+  seat: MyString
+  fromdate: 2019-01-07
+  todate: 2019-01-07
+  user: two

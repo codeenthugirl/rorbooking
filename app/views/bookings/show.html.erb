@@ -1,0 +1,28 @@
+<h1>Logged, in , Hi <%= @name %> </h1>
+
+<h2> List of Bookings </h1>
+<table>
+  <thead>
+    <tr>
+	  <td> Booking id </td>
+	  <td> From Date </td>
+	  <td> To Date </td>
+	</tr>
+  </thead>
+  <% @booking.each do |booking| %>
+    <tr>
+	  <td> <%= booking.id %> </td>
+	  <td><%= booking.seat %></td>
+	  <td> <%= booking.fromdate %> </td>
+      <td> <%= booking.todate %> </td>
+	  <%if Date.today < booking.fromdate.to_date %>
+		 <td> <%= link_to "Edit", edit_booking_path(booking) %> </td>
+		 <td> <%= link_to "Cancel", booking_path(booking), method: :delete, data: { confirm: "Are you sure?"} %> </td>
+	  <%end%>
+	</tr>
+  <%end%>
+</table>
+
+<%= link_to "New Booking", new_booking_path %>
+
+<%= link_to "Logout", logout_path %>

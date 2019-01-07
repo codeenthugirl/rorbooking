@@ -1,0 +1,30 @@
+<% if @booking.errors %>
+  <% @booking.errors.full_messages.each do |msg| %>
+    <%= msg.inspect %>
+    <br/>
+    <br/>
+    <br/>
+  <% end %>
+<% end %>
+
+<%= form_for(@booking) do |f| %>
+  <%= f.label :seat %>
+  <%= f.select :seat,['A1','A2','A3','A4','A5','B1','B2','B3','B4'] %>
+  <br/>
+  <br/>
+  <%= f.label :FromDate %>
+  <%= f.date_field :fromdate , min: Date.today, max: Date.new(2019, 05, 01) %>
+  <br/>
+  <br/>
+  <br/>
+  <%= f.label :ToDate %>
+  <%= f.date_field :todate , min: Date.today , max: Date.new(2019, 05, 01)%>
+  <br/>
+  <br/>
+  <br/>
+  <%= f.submit "Book" %>
+  <br/>
+  <br/>
+<% end %>
+
+<%= link_to "Logout", logout_path %>

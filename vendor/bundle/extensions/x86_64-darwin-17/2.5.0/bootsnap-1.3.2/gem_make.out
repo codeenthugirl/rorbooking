@@ -1,0 +1,15 @@
+current directory: /Users/spuppala/bookingapp/vendor/bundle/gems/bootsnap-1.3.2/ext/bootsnap
+/Users/spuppala/.rvm/rubies/ruby-2.5.1/bin/ruby -r ./siteconf20190107-50052-1ci2hs5.rb extconf.rb
+creating Makefile
+
+current directory: /Users/spuppala/bookingapp/vendor/bundle/gems/bootsnap-1.3.2/ext/bootsnap
+make "DESTDIR=" clean
+
+current directory: /Users/spuppala/bookingapp/vendor/bundle/gems/bootsnap-1.3.2/ext/bootsnap
+make "DESTDIR="
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/spuppala/bookingapp/vendor/bundle/gems/bootsnap-1.3.2/ext/bootsnap
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 bootsnap.bundle ./.gem.20190107-50052-1grfn61/bootsnap

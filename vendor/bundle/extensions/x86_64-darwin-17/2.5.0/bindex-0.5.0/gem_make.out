@@ -1,0 +1,15 @@
+current directory: /Users/spuppala/bookingapp/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+/Users/spuppala/.rvm/rubies/ruby-2.5.1/bin/ruby -r ./siteconf20190107-50052-1lesmj9.rb extconf.rb
+creating Makefile
+
+current directory: /Users/spuppala/bookingapp/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/spuppala/bookingapp/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/spuppala/bookingapp/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/local/opt/coreutils/bin/ginstall -c -m 0755 cruby.bundle ./.gem.20190107-50052-sqel5b/bindex

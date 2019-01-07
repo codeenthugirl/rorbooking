@@ -1,0 +1,32 @@
+<h1>Hi Login page here </h1>
+
+  <% if @user.errors %>
+    <% @user.errors.full_messages.each do |msg| %>
+    <%= msg.inspect %>
+    <br/>
+    <br/>
+    <br/>
+    <% end %>
+  <% end %>
+
+  <% flash.each do |key, value| %> 
+    <%= value %>
+  <% end %>
+
+  <%= form_for(@user, url: login_path(@user)) do |f| %>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+    <br>
+    <br>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+    <br>
+    <br>
+    <%= f.submit "Login" %>
+  <% end %>
+
+  <br>
+  <br>
+ 
+  <%= link_to "Register a new user", register_user_path %>
+
